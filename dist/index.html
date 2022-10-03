@@ -1,13 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Wahlverwandtschaften Berlin</title>
+	<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 	<body>
-		<div id="content"></div>
-		<script src="main.js"></script>
+		<div class="container-fluid" id="main-container">
+			<nav class="navbar bg-light fixed-top">
+				<div
+					class="bg-light flex-grow-1"
+				>
+					<ul class="nav nav-tabs" id="myTabContent" role="tablist">
+						<li class="nav-item" role="presentation">
+						  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Startseite</button>
+						</li>
+						<li class="nav-item" role="presentation">
+						  <button class="nav-link" id="about-us-tab" data-bs-toggle="tab" data-bs-target="#about-us-tab-pane" type="button" role="tab" aria-controls="about-us-tab-pane" aria-selected="false">Über Uns</button>
+						</li>
+						<li class="nav-item" role="presentation">
+						  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Kontakt</button>
+						</li>
+					  </ul>
+					  <div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+						<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="about-us-tab" tabindex="1"></div>
+						<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="2"></div>
+					  </div>
+				</div>
+			</nav>
+			<template id="page1">
+				<div class="content container-fluid">
+					<div class="cover">
+						<div class="cover-image-container">
+							<img
+								src="florian-wehde-1uWanmgkd5g-unsplash.jpg"
+								class="img-fluid cover-image"
+								alt="Image of Berlin skyline"
+							/>
+						</div>
+						<div
+							class="d-flex flex-column justify-content-center align-items-center size-adjusted-side-margin mt-2"
+						>
+							<div>
+								<img
+									src="vw-berlin-logo-big.png"
+									class="img-fluid mt-2 cover-logo"
+									alt="Responsive image"
+								/>
+							</div>
+							<div class="row justify-content-center align-items-center m-3">
+								<div></div>
+								<a
+									href="#treffen"
+									type="button"
+									class="btn btn-primary adj-button-text btn-shadow flex-grow-1"
+									id="treffen-btn"
+								>
+									<span>Infos zum <br> nächsten Treffen</span>
+								</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-element mt-4">
+					<div
+						class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4"
+					>
+						<div class="d-flex flex-column justify-content-center">
+							<h2 class="adj-header-text text-center mt-3 mb-3">Warum es uns gibt</h2>
+							<p class="mt-3">
+								Wenn wir Glück haben, werden wir in einer Familie
+								hineingeboren, in der wir Vertrauen und Empathie lernen,<br />
+								und in der wir uns angenommen und wertgeschätzt fühlen.<br /><br />
+								Was macht aber eine Person, wenn diese Familie fehlt?
+								Die Tatsache einfach als eine dauerhafte Wahrheit
+								annehmen und sich mit der Einsamkeit abfinden?<br />
+							</p>
+							<div class="d-flex portrait-column">
+								<p>
+									Nein, das wollen wir für uns und für andere wie uns
+									nämlich nicht.<br /><br />
+
+									Stattdessen glauben wir, dass wenn wir andere Menschen
+									finden, die Ähnliches anbieten und geben wollen wie wir
+									ihnen, wird es funken.
+								</p>
+								<img
+									src="ian-schneider-PAykYb-8Er8-unsplash.jpg"
+									class="img-fluid para-image"
+									alt="Responsive image"
+								/>
+							</div>
+							<p class="mt-3">
+								Wir möchten gerne Zeit und Raum schaffen, damit tiefgründige
+								und dauerhafte Beziehungen zwischen Menschen, die selbst
+								wenig oder keine Familie haben, entstehen können.<br />
+								Mit diesem Vorsatz organisieren wir regelmäßige Treffen, um
+								Menschen mit ähnlichen Wünschen zusammenzubringen, ohne
+								Druck und Zwang.<br /><br />
+
+								Jede*r ist bei unseren Treffen willkommen. Wir freuen uns
+								auf Dich, und auch auf Deine Gedanken und Einsichten zum
+								Thema Wahlverwandtschaften!
+
+							</p>
+						</div>
+					</div>
+					<hr class="hr-element jump-point-offset lg-marg" id="treffen">
+					<div
+						class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4">	
+						<div class="d-flex flex-column justify-content-center">
+							<h2 class="adj-header-text text-center mt-2 mb-4">Unser nächstes Treffen:</h2>
+							<p>
+								<b>20. November 2022</b><br />
+								<b>14 - 17 Uhr</b><br />
+								<b>Bezirk:</b> Lichterfelde<br /><br />
+								Wir treffen uns an einem Ort mit Flügel, um zusammen in
+								lockerer Atmosphäre ein bisschen zu musizieren, quatschen
+								und Kuchen zu essen.<br />
+								Einige (amateure!) Mitglieder*innen bereiten ein paar Stücke
+								zum Vorspielen und zum Mitsingen vor. Jede*r ist herzlich
+								eingeladen, ihre weiteren Musikinstrumente mitzubringen und
+								spontan mitzumachen, oder sich einfach auszuruhen und
+								zuzuhören.<br />
+								Wer möchte kann auch gerne eine Kleinigkeit für das Buffet
+								mitbringen.<br /><br />
+								Um dich für das Event anzumelden und den genauen Standort zu
+								erfahren, schreib uns bitte eine Email und stell dich kurz
+								vor. Die Kontaktinfos findest du unter dem Reiter "Kontakt"
+								oben auf der Seite.
+							</p>
+						</div>
+					</div>
+					<hr class="hr-element mt-4">
+					<div class="d-flex flex-column align-items-center mt-4">
+						<div></div>
+						<button type="button" class="btn btn-primary btn-shadow adj-button-text mt-5" onclick="goToPageFour()">Impressum</button>
+						<div></div>
+					</div>
+					<div
+						class="container-fluid justify-content-center align-items-center"
+					>
+						<p class="fst-italic text-center pt-3">
+							Diese Seite wurde zuletzt am 3. Oktober 2022 bearbeitet.
+						</p>
+					</div>
+				</div>
+			</template>
+			<!-- This is page 2 -->
+			<template id="page2">
+				<div class="content container-fluid">
+					<div class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4">
+						<div class="d-flex flex-column justify-content-center align-items-center text-center">
+							<svg class="SVG" id="uns-pg-2"
+								xmlns="http://www.w3.org/2000/svg"
+								width="20%"
+								height="20%"
+								fill="currentColor"
+								class="bi bi-file-earmark-person"
+								viewBox="0 0 16 16"
+							>
+								<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+								<path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+								<path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+							</svg>
+							<h2 class="adj-header-text text-center mt-3 mb-3">Über uns</h2>
+						</div>
+						<div class="d-flex flex-column">
+							<p>
+								Gegründet wurde unsere Gruppe anfang 2020 von Hauptorganisatorin Petra Margarete, unterstützt von Ellen und Jen.<br /> 
+							</p>
+							<img
+								src="nathan-dumlao-6VhPY27jdps-unsplash.jpg"
+								class="img-fluid para-image2"
+								alt="Responsive image"
+							/>
+							<p class="mt-3">
+								Bevor das erste Treffen realisiert werden konnte, kam die Pandemie. In den ersten beiden Coronajahren haben wir keine Live-Veranstalungen organisiert, stattdessen aber Telefonkonferenzen abgehalten und weiterhin Ideen und Gedanken ausgetauscht. <br /><br />
+								Seit Mai 2022 nimmt es mit den Live-Begegnungen wieder Fahrt auf, und nun wird alle zwei Monate ein Treffen organisiert. Momantan (stand September 2022) besteht die Berliner-Gruppe aus 10 Mitglieder*innen.<br /><br />
+								Organisatorisch gehören wir zu der Wahlverwandtschaften e.V.
+								mit Sitz in Münster, und sind die offizielle Ortsgruppe für
+								Berlin.
+							</p>
+						</div>
+					</div>
+					<div class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4">
+						<div class="d-flex flex-column justify-content-center align-items-center text-center">
+							<svg class="SVG" id="leitlinien-pg-2";
+								xmlns="http://www.w3.org/2000/svg"
+								width="20%"
+								height="20%"
+								fill="currentColor"
+								class="bi bi-compass"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+								/>
+								<path
+									d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"
+								/>
+							</svg>
+							<h2 class="adj-header-text text-center mt-3 mb-3">Leitlinien der Berliner Ortsgruppe für Treffen und
+								Online-Aktivitäten:
+							</h2>
+						</div>
+						<div class="d-flex flex-column">
+							<p>
+								<ul style="padding-left: 25px; margin-bottom: 0px;">
+									<li>
+									Alle Menschen sind bei uns willkommen – egal welche Herkunft, welchen Glauben, welches Alter, welches Geschlecht, oder welche sexuelle Orientierung sie haben.
+									</li>
+									<li>Wir duzen uns.</li>
+									<li>
+									Es besteht keinen Zwang, regelmäßig oder langfristig zu den
+									Gruppen-Treffen zu kommen.
+									</li>
+									<li>
+									Der Aufbau einer persönlichen Beziehung erfordert üblicherweise
+									viel Zeit und Geduld. Wir erwarten deswegen keine
+									Sofort-Ergebnisse bei der Suche nach einem Wahlverwandten.
+									</li>
+									<li>
+									Beziehungen basieren auf der Gegenseitigkeit. Niemand steht unter
+									Druck, Näherungsversuche anderer Personen zu erwidern.
+									</li>
+									<li>
+									Wenn einen Wahlverwandten gefunden wird, sollte die Beziehung in
+									der Regel längerfristig sein. Deswegen muss die Entscheidung auf
+									beiden Seiten vom Herzen kommen, sonst hält die Beziehung nicht
+									auf Dauer.
+									</li>
+								</ul>
+							</p>
+							<img
+								src="bonnie-kittle-9-nse_cRvkE-unsplash.jpg"
+								class="img-fluid para-image2"
+								alt="Responsive image"
+							/>
+						</div>
+						<div class="d-flex flex-column justify-content-center align-items-center text-center">
+							<h5 class="adj-header-text2 text-center mt-5 mb-3">Von der Wahlverwandtschaften e.V.-Seite (Muttergesellschaft):</h5>
+						</div>
+						<div class="d-flex flex-column">
+							<div
+							class="container bg-warning pt-4 pb-4 mt-2 ps-4"
+							>
+								<b>Wahlfamilie ist…</b><br><br>
+								<ul>
+								<li>Interesse zeigen</li>
+								<li>Zuhören</li>
+								<li>Verbindlich</li>
+								<li>Langfristig ausgelegt</li>
+								<li>Der Wille, gegenseitig Verantwortung zu übernehmen</li>
+								<li>Menschenfreundlichkeit: Toleranz & Vertrauen</li>
+								<li>Plural</li>
+								<li>Solidarität: Geben & Nehmen</li><br>
+								
+								<b>…und ist nicht...</b><br>
+							
+								<br><li>Rein pragmatisches Interesse, z.B. Leihomi, Pflege übernehmen</li>
+								<li>Monetär interessiert</li><br>
+								</ul>
+							
+								<b>Wer sind wir, was leisten wir? (Wahlverwandtschaften e.V.)</b><br><br>
+								<ul>
+								<li>Katalysator: wir ermöglichen das Suchen und Finden von Wahlverwandten
+								(seelisch, nicht pragmatisch oder sexuell orientiert)</li>
+								<li>Wir bringen Menschen mit ähnlichen Anliegen zusammen, vermitteln Ort und Zeit der Treffen</li>
+								<li>Füllen eine gesellschaftliche Lücke</li>
+								<li>Zukunftsweisende Bewegung</li>
+								<li>Hilfe zur Selbsthilfe</li>
+								
+								<br><b>…und was nicht…</b>
+								
+								<br><br><li>Bespaßer bzw. konsumorientiert</li>
+								<li>Schenker</li>
+								<li>Individueller Vermittler</li>
+								<li>Pflegedienst</li>
+								<li>Leihomibörse/pragmatisch</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4">
+						<div class="d-flex flex-column justify-content-center align-items-center text-center">
+							<svg class="SVG" id="aktivitaeten-pg-2"
+								xmlns="http://www.w3.org/2000/svg"
+								width="20%"
+								height="20%"
+								fill="currentColor"
+								class="bi bi-calendar-event"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+								/>
+								<path
+									d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+								/>
+							</svg>
+							<h2 class="adj-header-text text-center mt-3 mb-3">Aktivitäten der Berliner Ortsgruppe</h2>
+							<h5 class="adj-header-text2 text-center mb-3">Unsere Treffen in Berlin</h5>
+							<p class="text-start">
+								Wir treffen uns im zweimonatigen Takt und machen Spaziergänge oder besuchen kulturelle Ausstellungen.<br> 
+								Meistens gehen wir danach in ein Café, um uns weiterhin auszutauschen.
+								<br><br><b>Vergangene Treffen:</b>
+								<ul class="text-start">
+								<li>14. Mai, 2022: Stadtspaziergang von der Friedrichstr. bis zum Zollpackhof, wo wir zusammen Kaffee und Kuchen gegessen haben.</li>
+								<li>16. Juli, 2022: Besuch des Futuriums, danach Kaffee und Kuchen wieder im Zollpackhof.</li>
+								<li>25. September, 2022: Spaziergang in dem Tiergarten zum Cafe am Neuen See, wo wir einen Tisch reserviert hatten.</li>
+								</ul>
+							</p>
+							<h5 class="adj-header-text2 mt-4 mb-3">Unsere Online-Präsenz</h5>
+							<p class="text-start">Außer dieser Webseite, die lediglich zur Information dient, haben wir eine Facebook-Seite eingerichtet,<br>  
+							auf der die Berliner-Mitglieder sich online austauschen können. 
+							Der Link zu der Facebook-Seite gibt's <a href="https://www.facebook.com/groups/691106055027966" class="ex-link">hier</a>
+							</p>
+						</div>
+					</div>
+					<div class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4">
+						<div class="d-flex flex-column justify-content-center align-items-center text-center">
+							<svg class="SVG" id="artikel-pg-2"
+								xmlns="http://www.w3.org/2000/svg"
+								width="20%"
+								height="20%"
+								fill="currentColor"
+								class="bi bi-file-earmark-text"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"
+								/>
+								<path
+									d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+								/>
+							</svg>
+							<h2 class="adj-header-text text-center mt-3 mb-3">Ausgewählte Artikel</h2>
+
+							<h6 class="text-center">Entnommen aus der der Presse-Seite von
+								<a href="https://www.wahlverwandtschaften.org/presse.html" class="ex-link">wahlverwandtschaften.org</a>:</h6>
+						</div>
+						<div class="d-flex flex-column">
+							<div class="container bg-warning pt-4 pb-4 mt-2 ps-4"
+								>
+								<p>
+									<ul>
+										<li>Video-Beitrag: taz.lab und Heinrich Böll-Stiftung, 2015, "Wahlverwandschaften" <a href="https://www.youtube.com/watch?v=stjyLYwRgDM&list=PLQoUnPhwq7cyoxY0VIWecxOp9xKNnKhN_&index=5" class="ex-link">(Link zu Youtube)</a>
+										</li>
+										<li>Radio: CT-das Radio, 28.02.2015: <a href="https://www.wahlverwandtschaften.org/images/dateien/mp3/Wahlverwandtschaften_CT_-Radio_28022015.mp3" class="ex-link">(Link zu dem Radio-Spot)</a></li>
+										<li>Eine neue Familie aus dem Internet (RP Online, 16.06.2015) <a href="https://rp-online.de/nrw/staedte/moenchengladbach/eine-neue-familie-aus-dem-internet_aid-21836365" class="ex-link">(Link zum Artikel)</a>
+										</li>
+										<li>Sehnsucht nach der Wunschfamilie (Westfaelische Nachrichten 19.01.2015) <a href="https://www.wn.de/muenster/sehnsucht-nach-der-wunschfamilie-1864700" class="ex-link">(Link zum Artikel)</a>
+										</li>
+										<li>Zum Weltfrauentag: Krefelder Projekt gegen Einsamkeit ausgezeichnet (RP Online, 07.03.2014) <a href="https://rp-online.de/nrw/staedte/krefeld/zum-weltfrauentag-krefelder-projekt-gegen-einsamkeit-ausgezeichnet_aid-20468127" class="ex-link">(Link zum Artikel)</a>
+										<li>Wahlverwandschaft: Die selbst gewählte Familie (Westdeutsche Zeitung, 21.02.2014) <a href="https://www.wz.de/specials/nrw/krefeld/wahlverwandschaft-die-selbst-gewaehlte-familie_aid-29667731" class="ex-link">(Link zum Artikel)</a>
+										</li>
+								</p>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-element mt-4">
+					<div class="d-flex flex-column align-items-center mt-4">
+						<div></div>
+						<button type="button" class="btn btn-primary btn-shadow adj-button-text mt-5" onclick="goToPageFour()">Impressum</button>
+						<div></div>
+					</div>
+					<div
+						class="container-fluid justify-content-center align-items-center"
+					>
+						<p class="fst-italic text-center pt-3">
+							Diese Seite wurde zuletzt am 3. Oktober 2022 bearbeitet.
+						</p>
+					</div>
+				</div>
+			</template>
+			<template id="page3">
+				<div class="content container-fluid d-flex flex-column align-items-between">
+					<div class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4">
+						<div class="d-flex flex-column justify-content-center align-items-center text-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20%"
+								height="20%"
+								fill="currentColor"
+								class="SVG"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+								/>
+							</svg>
+							<h2 class="adj-header-text text-center mt-3 mb-3">Kontakt zu der Berliner Ortsgruppe</h2>
+						</div>
+						<div class="d-flex flex-column">
+							<p class="text-center">
+								Falls du Fragen zu uns hast oder dich für ein Treffen anmelden möchtest, schreib uns einfach eine E-Mail an<br>
+									<b>berlin@wahlverwandtschaften.org</b><br>
+									<br> 
+							</p>
+							<img
+							src="glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+							class="img-fluid para-image2"
+							alt="Responsive image"
+							/>
+						</div>
+					</div>
+					<hr class="hr-element mt-4">
+					<div class="d-flex flex-column align-items-center mt-4">
+						<div></div>
+						<button type="button" class="btn btn-primary btn-shadow adj-button-text mt-5" onclick="goToPageFour()">Impressum</button>
+						<div></div>
+					</div>
+					<div
+						class="container-fluid justify-content-center align-items-center"
+					>
+						<p class="fst-italic text-center pt-3">
+							Diese Seite wurde zuletzt am 3. Oktober 2022 bearbeitet.
+						</p>
+					</div>
+				</div>
+			</template>
+			<template id="page4">
+				<div class="content container-fluid">
+					<div
+						class="row justify-content-center align-items-center size-adjusted-side-margin p-3 mt-4">
+						<div class="d-flex flex-column">
+							<h2
+								class="adj-header-text text-center mt-3 mb-3"
+								id="impressum-pg-4"
+							>
+								Impressum
+							</h2>
+							<p>
+								<b
+									>Redaktionell verantwortlich für die Webseite der
+									berliner Ortsgruppe:</b
+								><br />
+								Jennifer Shivel<br />
+								Luisenplatz 3<br />
+								10585 Berlin<br /><br />
+			
+								<b>Angaben gemäß § 5 TMG</b><br />
+								Wahlverwandtschaften e. V.<br />
+								An den Bleichen 3<br />
+								48151 Münster<br /><br />
+			
+								<b>Vertreten durch:</b><br />
+								Samia Lilge (1. Vorsitz)<br />
+								Sabrina ten Brink (2. Vorsitz)<br /><br />
+			
+								<b>Kontakt bei Wahlverwandtschaften e.V.:</b><br />
+								Telefon: 02535 / 55 19970<br />
+								E-Mail: berlin@wahlverwandtschaften.org<br /><br />
+			
+								<b>EU-Streitschlichtung</b><br />
+								Die Europäische Kommission stellt eine Plattform zur
+								Online-Streitbeilegung (OS) bereit:<br />
+								https://ec.europa.eu/consumers/odr/.<br />
+								Unsere E-Mail-Adresse finden Sie oben im Impressum.<br /><br />
+			
+								<b
+									>Verbraucherstreitbeilegung/<br />Universalschlichtungsstelle</b
+								><br />
+								Wir sind nicht bereit oder verpflichtet, an
+								Streitbeilegungsverfahren vor einer<br />
+								Verbraucherschlichtungsstelle teilzunehmen.
+							</p>
+						</div>
+					</div>
+					<hr class="hr-element mt-4">
+					<div
+						class="container-fluid"
+					>
+						<p class="fst-italic text-center pt-3">
+							Diese Seite wurde zuletzt am 3. Oktober 2022 bearbeitet.
+						</p>
+					</div>
+				</div>
+			</template>
+		<footer>
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+				crossorigin="anonymous"
+			></script>
+		</footer>
 	</body>
 </html>
